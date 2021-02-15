@@ -17,11 +17,7 @@ public class Cirkelklass {
     public Cirkelklass(int x, int y, int r) {
         this.x = x;
         this.y = y;
-        if (r > 0) {
-            this.r = r;
-        } else {
-            this.r = -r;
-        }
+        this.r = Math.abs(r);
     }
 
     public int getX() {
